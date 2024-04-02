@@ -40,7 +40,7 @@ There's a lot of great open source software to perform facial recognition, but e
 
 - [CompreFace](https://github.com/exadel-inc/CompreFace)
 - [Amazon Rekognition](https://aws.amazon.com/rekognition)
-- [DeepStack](https://deepstack.cc)
+- [DeepStack](https://github.com/johnolafenwa/DeepStack)
 - [CodeProject.AI Server](https://www.codeproject.com/AI/docs/index.html)
 - [Facebox](https://machinebox.io)
 
