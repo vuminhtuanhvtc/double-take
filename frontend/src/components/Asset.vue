@@ -346,6 +346,10 @@ export default {
   .icon.facebox {
     background: var(--indigo-600);
   }
+  .icon.handgesture {
+    background: var(--pink-600);
+  }
+
 }
 
 .p-badge.clickable {
@@ -466,6 +470,9 @@ img.thumbnail {
 }
 .box.facebox {
   border-color: var(--indigo-600);
+}
+.box.handgesture {
+  border-color: var(--pink-600);
 }
 
 .p-card {

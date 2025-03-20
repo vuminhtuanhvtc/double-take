@@ -43,6 +43,7 @@ There's a lot of great open source software to perform facial recognition, but e
 - [DeepStack](https://github.com/johnolafenwa/DeepStack)
 - [CodeProject.AI Server](https://www.codeproject.com/AI/docs/index.html)
 - [Facebox](https://machinebox.io)
+- [HandGesture](https://github.com/vuminhtuanhvtc/handgesture)
 
 ### Supported NVRs
 
@@ -67,7 +68,7 @@ volumes:
 services:
   double-take:
     container_name: double-take
-    image: skrashevich/double-take
+    image: vmtuan/double-take
     restart: unless-stopped
     volumes:
       - double-take:/.storage
@@ -85,14 +86,14 @@ To run the Double Take application in Docker on Windows, follow the below instru
 
 3. Pull the Double Take Docker image with the command:
    ```
-   docker pull skrashevich/double-take:latest
+   docker pull vmtuan/double-take:latest
    ```
 4. Determine the location you wish to use for the configuration folder. For example:  C:\Users\YourUsername\double-take-config .        
 
 5. Run the Docker command to start the Double Take container, replacing the 
   default configuration folder location with your new location:    
    ```
-   docker run -d -v C:\Users\YourUsername\double-take-config:/.storage -p 3000:3000 skrashevich/double-take:latest 
+   docker run -d -v C:\Users\YourUsername\double-take-config:/.storage -p 3000:3000 vmtuan/double-take:latest 
    ```
 
   Make sure that the  C:\Users\YourUsername\double-take-config  directory
@@ -570,6 +571,18 @@ detectors:
     #   - front-door
     #   - garage
 
+  handgesture:
+    url:
+    # number of seconds before the request times out and is aborted
+    timeout: 15
+    # require opencv to find a face before processing with detector
+    opencv_face_required: false
+    # only process images from specific cameras, if omitted then all cameras wi>
+    # cameras:
+    #   - front-door
+    #   - garage
+
+
   facebox:
     url:
     # number of seconds before the request times out and is aborted
@@ -743,4 +756,4 @@ compreface_key: <api-key>
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=skrashevich/double-take&type=Timeline)](https://star-history.com/#skrashevich/double-take&Timeline)
+[![Star History Chart](https://api.star-history.com/svg?repos=vmtuan/double-take&type=Timeline)](https://star-history.com/#vmtuan/double-take&Timeline)

@@ -70,6 +70,10 @@ module.exports = {
       collection_id: 'double-take',
       opencv_face_required: true,
     },
+    handgesture: {
+      timeout: 15,
+      opencv_face_required: false,
+    },
   },
   notify: {
     only_unknown: false,
